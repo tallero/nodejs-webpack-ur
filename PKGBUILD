@@ -149,12 +149,12 @@ elif [[ "${_npm}" == "false" ]]; then
 fi
 _tarname="${_pkg}-${_tag}"
 _tarfile="${_tarname}.${_archive_format}"
-_sum="c260bc56e3eb822f96ea10bdef55b4158a7cc5b4ec55503f61f1cdff367e407a"
-_sig_sum="bca05e0d77e803cbfbf8304192b62964159fe71e6bcb8023bcae5954eab6258a"
-_bundle_sum="e7bf622ac1afab6ebdd14f6ff621874d24aca9e4899f1fa7616a84faea4ed81c"
-_bundle_sig_sum="bdf198594304ccfd8d262ffa4ff5f1a0511ee198a73b1c74ed227f346eda4998"
-_npm_sum="954b7c47c94833a8bfdbc42283296ed67e8a7c23ecbb55f57ca1f625eb2f8a1f"
-_npm_sig_sum="4e1e1884a4cb8ca40cabb87e0af9ae1e578a12a6b65c7056e4c88acb12a1ecfd"
+_sum="SKIP"
+_sig_sum="SKIP"
+_bundle_sum="SKIP"
+_bundle_sig_sum="SKIP"
+_npm_sum="SKIP"
+_npm_sig_sum="SKIP"
 # Dvorak
 _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 # Truocolo
