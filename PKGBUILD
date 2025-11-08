@@ -50,7 +50,7 @@ if [[ "${_os}" == "Android" ]]; then
   _node="nodejs-lts"
 fi
 if [[ ! -v "_npm" ]]; then
-  _npm="false"
+  _npm="true"
 fi
 if [[ ! -v "_git_http" ]]; then
   _git_http="github"
@@ -64,7 +64,7 @@ if [[ ! -v "_git" ]]; then
 fi
 if [[ ! -v "_docs" ]]; then
   if [[ "${_npm}" == "false" ]]; then
-    _docs="true"
+    _docs="false"
   elif [[ "${_npm}" == "true" ]]; then
     _docs="false"
   fi
@@ -92,6 +92,11 @@ pkgbase="${_node}-${_pkg}"
 pkgname=(
   "${pkgbase}"
 )
+if [[ "${_docs}" == "true" ]]; then
+  pkgname+=(
+    "${pkgbase}-docs"
+  )
+fi
 _pkgdesc=(
   "JavaScript bundler (CommonJs,"
   "AMD, ES6 modules, CSS, Images,"
