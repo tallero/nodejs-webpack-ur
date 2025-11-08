@@ -133,8 +133,12 @@ _nodejs_webpack_docs_ref_optdepends=(
 _nodejs_webpack_cli_optdepends=(
   "Webpack's Command Line Interface."
 )
+_neidel_release_optdepends=(
+  "Jonathan Neidel's release tool."
+)
 optdepends=(
   "${_nodejs_webpack_cli_optdepends[*]}"
+  "${_neidel_release_optdepends[*]}"
 )
 if [[ "${_docs}" == "true" ]]; then
   optdepends+=(
