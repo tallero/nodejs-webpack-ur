@@ -185,7 +185,7 @@ sha256sums=()
 if [[ "${_evmfs}" == "true" ]]; then
   if [[ "${_npm}" == "true" ]]; then
     _uri="${_evmfs_npm_uri}"
-    _sum="${_evmfs_npm_sum}"
+    _sum="${_npm_sum}"
     _sig_src="${_evmfs_npm_uri}"
     _sig_sum="${_npm_sig_sum}"
   elif [[ "${_npm}" == "false" ]]; then
